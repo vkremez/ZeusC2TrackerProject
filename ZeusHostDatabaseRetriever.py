@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # author = Vitali
+# -*- coding: iso-8859-15 -*-
 
 import sqlite3 as lite
 
@@ -14,6 +15,6 @@ with con:
     rows = cur.fetchall()
 
     for row in rows:
-        print row
-        
+        f.write(' '.join(row) + '\n')
+ 
 f.close()
