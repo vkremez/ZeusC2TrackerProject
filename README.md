@@ -4,15 +4,15 @@ Usage:
 
 (1) Run Zeusloader.py to create monolithic "zeustrackerhosts.sqlite" database with fields "Date", "Malware", and "Host";
 
-(2) Run ZeusRetriever.py to map hostnames to localfile "hosts.txt" using ZeusTrackerHosts.sqlite;
+(2) Run ZeusHostConverter.py to convert hostnames to cities using http://ip-api.com JSON API and post data to "where.data";
 
-(3) Run ZeusHostConverter.py to convert hostnames to cities using http://ip-api.com JSON API and post data to "where.data";
+(3) Run Geoload.py to parse "where.data", obtain lat/long values using Google MAP API, and store values in another database "geodata.sqlite";
 
-(4) Run Geoload.py to parse "where.data", obtain lat/long values using Google MAP API, and store values in another database "geodata.sqlite";
+(4) Run Geodump.py to map the data from "geodata.sqlite" to Javascript file "where.js";
 
-(5) Run Geodump.py to map the data from "geodata.sqlite" to Javascript file "where.js";
+(5) View the Google-mapped values in "where.html" that points to "where.js".
 
-(6) View the Google-mapped values in "where.html" that points to "where.js".
+=========================================================================================================================================
 
 Source: https://zeustracker.abuse.ch
 
