@@ -13,7 +13,8 @@ for line in data:
 		host = ' '.join(host).replace('"','').split()
 
 f = open('hosts.txt', 'r+')
-f.write(host)
+for i in host:
+	f.write(i+'\n')
 f.close()
 rdate = []
 for line in data:
@@ -36,10 +37,10 @@ conn.text_factory = str
 cur.executescript('''
 DROP TABLE IF EXISTS Hosts;
 CREATE TABLE Hosts (
-    id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-    mdate 	TEXT,
-	malware TEXT,
-    name    TEXT UNIQUE
+id  		INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+mdate 		TEXT,
+malware 	TEXT,
+name    	TEXT UNIQUE
 );
 ''')
 
