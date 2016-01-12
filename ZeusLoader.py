@@ -12,7 +12,7 @@ for line in data:
 		host.append(line.split('href="/monitor.php?host=')[1])
 		host = ' '.join(host).replace('"','').split()
 
-f = open('hosts', 'r+')
+f = open('hosts.txt', 'r+')
 f.write(host)
 f.close()
 rdate = []
