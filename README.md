@@ -2,7 +2,7 @@
 Author: Vitali Kremez
 
 =========================================================================================================================================
-Powered by SQLite, Python, JavaScript, HTML, GoogleMap API, IP-API JSON AP
+Powered by SQLite, Python, JavaScript, HTML, GoogleMap API, IP-API JSON API
 
 Creates a SQL table with over 2,500 Zeus Command-and-Control servers and visualizes the database via GoogleMap API.
 
