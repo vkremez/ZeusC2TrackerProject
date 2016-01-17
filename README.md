@@ -1,8 +1,14 @@
-# ZeusTrackerGeoCode
+# ZeusC2TrackerProject
+Author: Vitali Kremez
+
+=========================================================================================================================================
+Powered by SQLite, Python, JavaScript, HTML, GoogleMap API, IP-API JSON AP
+
+Creates a SQL table with over 2,500 Zeus Command-and-Control servers and visualizes the database via GoogleMap API.
 
 Usage:
 
-(1) Run Zeusloader.py to create monolithic "zeustrackerhosts.sqlite" database with columns "Date", "Malware", and "Host";
+(1) Run ZeusCyberCrimeloader.py to create monolithic "zeustrackerhosts.sqlite" database with columns mdate, url, ip, rtype, rsource;
 
 (2) Run ZeusHostConverter.py to convert hostnames to cities using http://ip-api.com JSON API and post data to "where.data";
 
@@ -14,7 +20,9 @@ Usage:
 
 =========================================================================================================================================
 
-Source: https://zeustracker.abuse.ch
+*Source: https://zeustracker.abuse.ch
+
+*Source: http://cybercrime-tracker.net
 
 Using the Google Geocoding API with a Database and Visualizing data on Google Map
 
