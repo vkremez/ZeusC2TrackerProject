@@ -2,7 +2,7 @@
 
 Usage:
 
-(1) Run Zeusloader.py to create monolithic "zeustrackerhosts.sqlite" database with fields "Date", "Malware", and "Host";
+(1) Run Zeusloader.py to create monolithic "zeustrackerhosts.sqlite" database with columns "Date", "Malware", and "Host";
 
 (2) Run ZeusHostConverter.py to convert hostnames to cities using http://ip-api.com JSON API and post data to "where.data";
 
