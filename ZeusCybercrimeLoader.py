@@ -3,6 +3,7 @@
 import urllib
 import sqlite3
 import re
+import pandas as pd
 
 u = urllib.urlopen('http://www.cybercrime-tracker.net/index.php?s=0&m=10000&search=zeus')
 
@@ -86,3 +87,9 @@ for element in zipped:
 	cur.execute('''INSERT OR REPLACE INTO ZeusC2Tracker (mdate, url, ip, rtype, rsource) VALUES ( ?, ?, ?, ?, ? )''', ( mdate, url, ip, rtype, rsource ) )
 
 conn.commit()
+
+df = pd.read_sql_query("SELECT * FROM ZeusC2Tracker", conn)
+print df
+print "\n===============================================\n"
+print "Run ZeusHostConverter to obtain geographical location of Zeus C2 servers."
+print "\n===============================================\n"
