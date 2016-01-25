@@ -1,6 +1,6 @@
 # ZeusC2TrackerProject
 Author: Vitali Kremez
-![img](Screen Shot 2016-01-15 at 12.09.15 AM.png)
+![img](http://www.vkremez.com/uploads/5/7/0/0/57000165/4834241_orig.png)
 =========================================================================================================================================
 Powered by SQLite, Python, JavaScript, HTML, GoogleMap API, IP-API JSON API
 
